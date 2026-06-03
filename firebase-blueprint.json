@@ -1,0 +1,23 @@
+{
+  "entities": {
+    "Status": {
+      "title": "System Status",
+      "description": "Global toggle state",
+      "type": "object",
+      "properties": {
+        "toggled": {
+          "type": "boolean"
+        }
+      },
+      "required": ["toggled"]
+    }
+  },
+  "firestore": {
+    "/system/status": {
+      "schema": {
+        "$ref": "#/entities/Status"
+      },
+      "description": "Global system status"
+    }
+  }
+}

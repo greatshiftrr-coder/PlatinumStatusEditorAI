@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer utilities {
+  .animate-text-gradient {
+    background-size: 200% auto;
+    animation: text-gradient 4s linear infinite;
+  }
+}
+
+@keyframes text-gradient {
+  to {
+    background-position: 200% center;
+  }
+}
